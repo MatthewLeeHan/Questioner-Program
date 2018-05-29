@@ -8,6 +8,6 @@ A yes/no program. Type a question and get an answer :)
 
 https://matthewleehan.github.io/Questioner-Program/
 
-##Notes
+## Notes
 
 Made by following this tutorial: https://www.eduonix.com/dashboard/learn-web-development-using-vuejs
