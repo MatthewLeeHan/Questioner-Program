@@ -1,5 +1,8 @@
 <!-- Questioner Program - Followed tutorial on Eduonix Course
     Matthew Han -->
+<!-- COURSE LINK: https://www.eduonix.com/dashboard/learn-web-development-using-vuejs/lecture/15912281-->
+<!-- LECTURE: QUESTIONER MINI PROJECT -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,22 +10,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ask me anything!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css"> <!-- CYBORG ::: BOOTSTRAP THEME -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> <!-- ANIMATE.CSS -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> <!-- VUE.JS-->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <!-- AXOIS -->
     <script src="https://unpkg.com/lodash@4.13.1/lodash.min.js"></script> <!-- lodash -->
-    <style>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> <!-- POPPINS Google Font -->
+
+    <style> /** MY CUSTOM CSS **/
+        body{
+            font-family: 'Poppins', sans-serif;
+        }
         .everything{
             margin-top: 50px;
         }
+        .questionInput{
+            margin-top: 15px;
+        }
+        
     </style>
 </head>
 <body>
     <div id="app">
         <div class="container text-center everything">
-            <h1>Ask A Question</h1>
-            <h5>Must be a yes/no question</h5>
-            <input class="form-control" v-model="question">
+            <h1 class="animated bounce" >ASK A QUESTION</h1>
+            <h5 class="animated fadeIn">Must be a yes/no question</h5>
+            <input class="form-control questionInput animated fadeIn" placeholder= "Type here..." v-model="question">
             <br><br/>
             <br><br/>
             <h2>{{answer}}</h2>
